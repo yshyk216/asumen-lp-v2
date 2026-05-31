@@ -107,10 +107,6 @@ export default function Home() {
 
       {/* Candidate-specific sample cards */}
       <section className="max-w-5xl mx-auto px-8 py-12">
-        <p className="text-sm font-bold text-[#2aa7a1] mb-3">
-          例）配信業界の求人
-        </p>
-
         <h2 className="text-3xl font-bold mb-6">
           同じ求人でも、候補者によって話題が変わります
         </h2>
@@ -118,6 +114,10 @@ export default function Home() {
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           明日めんは、汎用的な質問リストではなく、
           求人内容と候補者の経験が重なる部分から、面談で自然に話せる話題を整理します。
+        </p>
+
+          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+          例）配信業界の求人
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
