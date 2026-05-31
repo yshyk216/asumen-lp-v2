@@ -117,7 +117,7 @@ export default function Home() {
         </p>
 
           <p className="text-sm font-bold text-[#2aa7a1] mb-3">
-          例）配信業界の求人
+          例：配信業界の求人
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
