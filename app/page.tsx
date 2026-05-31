@@ -107,6 +107,10 @@ export default function Home() {
 
       {/* Candidate-specific sample cards */}
       <section className="max-w-5xl mx-auto px-8 py-12">
+        <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+          例）配信業界の求人
+        </p>
+
         <h2 className="text-3xl font-bold mb-6">
           同じ求人でも、候補者によって話題が変わります
         </h2>
@@ -153,7 +157,7 @@ export default function Home() {
               reason: "イベント制作経験 × 配信案件調整",
             },
             {
-              label: "C：PA経験者",
+              label: "C：音響経験者",
               title: "候補者Cさん 面談メモ",
               summary: "音響確認・現場対応の経験あり。",
               description:
@@ -167,7 +171,7 @@ export default function Home() {
               question:
                 "本番中に音声トラブルが起きた時って、まずどこから原因を切り分けてました？",
               tags: ["切り分け", "初動", "現場対応"],
-              reason: "PA経験 × 本番中の音声対応",
+              reason: "音響経験 × 本番中の音声対応",
             },
           ].map((sample) => (
             <div key={sample.label} className="bg-white rounded-2xl p-6 shadow-sm">
