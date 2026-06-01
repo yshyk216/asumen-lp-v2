@@ -7,25 +7,25 @@ export default function Home() {
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-8 py-20">
         <p className="text-lg mb-4 text-[#2aa7a1] font-semibold">
-          採用判断ではなく、面談前の話題整理。
+          採用担当の方へ
         </p>
 
         <h1 className="text-5xl font-bold leading-tight mb-6">
           面談前5分で、
           <br />
-          その候補者と話すことが見える。
+          現場面談者に渡せるメモができる。
         </h1>
 
         <p className="text-2xl leading-relaxed mb-6">
           明日めんは、求人票と匿名化した候補者プロフィールから、
           <br />
-          面談前に使える「その人用の話題メモ」を作成するAIです。
+          現場面談者に渡せる「候補者別の面談メモ」を作成するAIです。
         </p>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
-          候補者を評価したり、採用可否を判定したりするものではありません。
+          採用判断ではなく、面談前に「この候補者と何を話すとよさそうか」を整理します。
           <br />
-          面談担当者が自然に話せるきっかけを整理します。
+          現場面談者に「これだけ見て入ってください」と共有しやすい形でまとめます。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -56,15 +56,15 @@ export default function Home() {
       {/* Problem */}
       <section className="max-w-5xl mx-auto px-8 py-12">
         <h2 className="text-3xl font-bold mb-6">
-          カジュアル面談で、こんなことありませんか？
+          採用担当として、こんなことありませんか？
         </h2>
 
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <ul className="space-y-4 text-xl leading-relaxed">
-            <li>・経歴書は読んだが、何を話せばよいか迷う</li>
-            <li>・面談担当者によって、質問や話題にばらつきがある</li>
-            <li>・候補者ごとに話題を変える準備に時間がかかる</li>
-            <li>・現場面談者に「このあたりを話してほしい」と共有しづらい</li>
+            <li>・現場面談者に、候補者ごとの事前共有をするのが大変</li>
+            <li>・面談直前まで、候補者情報を読んでもらえないことがある</li>
+            <li>・面談担当者によって、話題や深掘りの質にばらつきがある</li>
+            <li>・面談後のフィードバックが浅く、次の判断材料が集まりにくい</li>
           </ul>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function Home() {
           {[
             ["1", "求人票・募集要項を貼る"],
             ["2", "匿名プロフィールを貼る"],
-            ["3", "候補者別の面談メモが完成"],
+            ["3", "現場面談者に渡せるメモが完成"],
           ].map(([num, text]) => (
             <div key={num} className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-[#2aa7a1] font-bold mb-3">STEP {num}</div>
@@ -113,10 +113,10 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           明日めんは、汎用的な質問リストではなく、
-          求人内容と候補者の経験が重なる部分から、面談で自然に話せる話題を整理します。
+          求人内容と候補者の経験が重なる部分から、現場面談者が自然に話せる話題を整理します。
         </p>
 
-          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+        <p className="text-sm font-bold text-[#2aa7a1] mb-3">
           例：配信業界の求人
         </p>
 
@@ -298,7 +298,7 @@ export default function Home() {
             <ul className="space-y-4 text-lg leading-relaxed">
               <li>・求人票と候補者経験の接点を整理する</li>
               <li>・面談で話しやすい実務場面を見つける</li>
-              <li>・現場面談者に渡せる話題メモを作る</li>
+              <li>・現場面談者に渡せる候補者別メモを作る</li>
             </ul>
           </div>
 
@@ -326,7 +326,7 @@ export default function Home() {
           <p className="text-xl leading-relaxed text-[#51608f] mb-4">
             デモ版は、Dify上の簡易画面でお試しいただけます。
             求人票と匿名化した候補者プロフィールを貼ると、
-            その場で「候補者別の話題メモ」を作成できます。
+            その場で「候補者別の面談メモ」を作成できます。
           </p>
 
           <p className="text-lg leading-relaxed text-[#667]">
@@ -363,7 +363,7 @@ export default function Home() {
         <p className="text-xl leading-relaxed text-[#51608f] mb-8">
           求人URLと匿名化した候補者プロフィールを送っていただければ、
           <br />
-          面談前に使える「その人用の話題メモ」を1件無料で作成します。
+          現場面談者に渡せる「候補者別の面談メモ」を1件無料で作成します。
           <br />
           通常1〜2営業日以内を目安に、メールでご連絡します。
         </p>
