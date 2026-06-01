@@ -44,12 +44,12 @@ export default function Home() {
             rel="noreferrer"
             className="inline-block bg-white text-[#2d4aa5] border border-[#2d4aa5] px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#eef2ff] transition text-center"
           >
-            デモ版を試す
+            デモ版で出力イメージを見る
           </a>
         </div>
 
         <p className="mt-5 text-sm text-[#667]">
-          ※候補者名・連絡先・住所・顔写真などは伏せた状態でご利用ください。
+          ※実際の求人で確認したい方は、無料作成フォームをご利用ください。
         </p>
       </section>
 
@@ -324,14 +324,18 @@ export default function Home() {
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-4">
-            デモ版は、Dify上の簡易画面でお試しいただけます。
-            求人票と匿名化した候補者プロフィールを貼ると、
-            その場で「候補者別の面談メモ」を作成できます。
+            デモ版は、出力イメージを確認するための簡易版です。
+            Dify上の画面で、求人票と匿名化した候補者プロフィールを貼ると、
+            その場で「候補者別の面談メモ」の雰囲気を確認できます。
+          </p>
+
+          <p className="text-lg leading-relaxed text-[#667] mb-4">
+            ※デモ版でも、候補者名・連絡先・住所・顔写真・SNS URLなど、
+            個人を直接特定できる情報は入力しないでください。
           </p>
 
           <p className="text-lg leading-relaxed text-[#667]">
-            ※デモ版でも、候補者名・連絡先・住所・顔写真・SNS URLなど、
-            個人を直接特定できる情報は入力しないでください。
+            ※実際の無料作成では、現場面談者に渡しやすい形に整えてお送りします。
           </p>
         </div>
       </section>
@@ -340,7 +344,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-8 py-12">
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <h2 className="text-3xl font-bold mb-6">
-            個人情報は伏せた状態で利用できます
+            個人を特定できる情報は不要です
           </h2>
 
           <p className="text-xl leading-relaxed mb-4">
@@ -365,7 +369,9 @@ export default function Home() {
           <br />
           現場面談者に渡せる「候補者別の面談メモ」を1件無料で作成します。
           <br />
-          通常1〜2営業日以内を目安に、メールでご連絡します。
+          デモ版は出力イメージの確認用です。
+          <br />
+          実際の無料作成では、現場に共有しやすい形に整えてお送りします。
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -384,11 +390,15 @@ export default function Home() {
             rel="noreferrer"
             className="inline-block bg-white text-[#2d4aa5] border border-[#2d4aa5] px-10 py-4 rounded-xl text-lg font-semibold hover:bg-[#eef2ff] transition"
           >
-            デモ版を試す
+            デモ版で出力イメージを見る
           </a>
         </div>
 
         <p className="mt-6 text-sm text-[#667]">
+          ※通常1〜2営業日以内を目安に、メールでご連絡します。
+        </p>
+
+        <p className="mt-2 text-sm text-[#667]">
           ※候補者名・連絡先・住所・顔写真などは伏せた状態でご利用ください。
         </p>
       </section>
