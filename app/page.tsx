@@ -1,5 +1,4 @@
 const TALLY_FORM_URL = "https://tally.so/r/Pdk2rB";
-const DIFY_DEMO_URL = "https://udify.app/workflow/OWNvPzEkN6nAn52F";
 
 export default function Home() {
   return (
@@ -39,12 +38,10 @@ export default function Home() {
           </a>
 
           <a
-            href={DIFY_DEMO_URL}
-            target="_blank"
-            rel="noreferrer"
+            href="#sample"
             className="inline-block bg-white text-[#2d4aa5] border border-[#2d4aa5] px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#eef2ff] transition text-center"
           >
-            デモ版で出力イメージを見る
+            サンプルメモを見る
           </a>
         </div>
 
@@ -77,9 +74,9 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            ["1", "求人票・募集要項を貼る"],
-            ["2", "匿名プロフィールを貼る"],
-            ["3", "現場面談者に渡せるメモが完成"],
+            ["1", "求人票・募集要項を送る"],
+            ["2", "匿名プロフィールを送る"],
+            ["3", "現場面談者に渡せるメモを受け取る"],
           ].map(([num, text]) => (
             <div key={num} className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-[#2aa7a1] font-bold mb-3">STEP {num}</div>
@@ -105,15 +102,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Candidate-specific sample cards */}
+      {/* How it generates */}
       <section className="max-w-5xl mx-auto px-8 py-12">
+        <h2 className="text-3xl font-bold mb-6">
+          どのように面談メモを作るか
+        </h2>
+
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <p className="text-xl leading-relaxed text-[#51608f] mb-6">
+            明日めんは、求人票と候補者プロフィールをそのまま要約するのではなく、
+            求人側の業務内容と候補者側の経験が重なる部分を整理し、
+            現場面談者が自然に話せる話題に変換します。
+          </p>
+
+          <div className="grid md:grid-cols-5 gap-4">
+            {[
+              ["1", "求人側の業務内容を整理"],
+              ["2", "候補者側の経験を整理"],
+              ["3", "重なる実務場面を抽出"],
+              ["4", "話すきっかけに変換"],
+              ["5", "現場に渡せる形に整形"],
+            ].map(([num, text]) => (
+              <div key={num} className="rounded-2xl bg-[#f5f5f7] p-5">
+                <div className="text-[#2aa7a1] font-bold mb-2">STEP {num}</div>
+                <p className="font-bold leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-lg leading-relaxed text-[#667] mt-6">
+            出力は、話題候補・話すきっかけ・観点タグ・根拠の形で整理します。
+            採用可否の判断や候補者のスコアリングは行いません。
+          </p>
+        </div>
+      </section>
+
+      {/* Candidate-specific sample cards */}
+      <section id="sample" className="max-w-5xl mx-auto px-8 py-12">
+        <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+          整形済みサンプル
+        </p>
+
         <h2 className="text-3xl font-bold mb-6">
           同じ求人でも、候補者によって話題が変わります
         </h2>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
-          明日めんは、汎用的な質問リストではなく、
-          求人内容と候補者の経験が重なる部分から、現場面談者が自然に話せる話題を整理します。
+          以下は、配信業界の求人を例にしたサンプルです。
+          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに、
+          現場面談者に渡しやすい形に整えてお送りします。
         </p>
 
         <p className="text-sm font-bold text-[#2aa7a1] mb-3">
@@ -138,6 +175,11 @@ export default function Home() {
                 "リハーサルや本番前に、配信構成で不明点があった時って、まず何を確認してました？",
               tags: ["確認", "配信構成", "現場対応"],
               reason: "配信オペ経験 × リハーサル対応",
+              concerns: [
+                "最初に任される範囲",
+                "困った時の相談先",
+                "配信設計まで関われるか",
+              ],
             },
             {
               label: "B：イベント制作経験者",
@@ -155,6 +197,11 @@ export default function Home() {
                 "ハイブリッドイベントで進行変更が入った時って、まず誰と何を確認してました？",
               tags: ["進行管理", "関係者調整", "確認"],
               reason: "イベント制作経験 × 配信案件調整",
+              concerns: [
+                "配信領域のキャッチアップ方法",
+                "クライアント対応の範囲",
+                "現場と社内の役割分担",
+              ],
             },
             {
               label: "C：音響経験者",
@@ -172,6 +219,11 @@ export default function Home() {
                 "本番中に音声トラブルが起きた時って、まずどこから原因を切り分けてました？",
               tags: ["切り分け", "初動", "現場対応"],
               reason: "音響経験 × 本番中の音声対応",
+              concerns: [
+                "映像・配信側の学び方",
+                "専門外の相談体制",
+                "本番中の判断範囲",
+              ],
             },
           ].map((sample) => (
             <div key={sample.label} className="bg-white rounded-2xl p-6 shadow-sm">
@@ -198,7 +250,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="border-t border-[#e5e7eb] pt-5">
+              <div className="border-t border-[#e5e7eb] pt-5 mb-5">
                 <p className="font-bold mb-3">💬 話すきっかけ</p>
 
                 <p className="text-sm font-bold text-[#2aa7a1] mb-2">
@@ -221,6 +273,15 @@ export default function Home() {
                 </div>
 
                 <p className="text-sm text-[#667]">根拠：{sample.reason}</p>
+              </div>
+
+              <div className="border-t border-[#e5e7eb] pt-5">
+                <p className="font-bold mb-3">🤝 候補者が気にしそうなこと</p>
+                <ul className="space-y-2 leading-relaxed text-[#51608f]">
+                  {sample.concerns.map((concern) => (
+                    <li key={concern}>・{concern}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
@@ -316,30 +377,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Demo note */}
-      <section className="max-w-5xl mx-auto px-8 py-12">
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <h2 className="text-3xl font-bold mb-6">
-            デモ版について
-          </h2>
-
-          <p className="text-xl leading-relaxed text-[#51608f] mb-4">
-            デモ版は、出力イメージを確認するための簡易版です。
-            Dify上の画面で、求人票と匿名化した候補者プロフィールを貼ると、
-            その場で「候補者別の面談メモ」の雰囲気を確認できます。
-          </p>
-
-          <p className="text-lg leading-relaxed text-[#667] mb-4">
-            ※デモ版でも、候補者名・連絡先・住所・顔写真・SNS URLなど、
-            個人を直接特定できる情報は入力しないでください。
-          </p>
-
-          <p className="text-lg leading-relaxed text-[#667]">
-            ※実際の無料作成では、現場面談者に渡しやすい形に整えてお送りします。
-          </p>
-        </div>
-      </section>
-
       {/* Privacy */}
       <section className="max-w-5xl mx-auto px-8 py-12">
         <div className="bg-white rounded-2xl p-8 shadow-sm">
@@ -369,9 +406,7 @@ export default function Home() {
           <br />
           現場面談者に渡せる「候補者別の面談メモ」を1件無料で作成します。
           <br />
-          デモ版は出力イメージの確認用です。
-          <br />
-          実際の無料作成では、現場に共有しやすい形に整えてお送りします。
+          通常1〜2営業日以内を目安に、メールでご連絡します。
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -385,20 +420,14 @@ export default function Home() {
           </a>
 
           <a
-            href={DIFY_DEMO_URL}
-            target="_blank"
-            rel="noreferrer"
+            href="#sample"
             className="inline-block bg-white text-[#2d4aa5] border border-[#2d4aa5] px-10 py-4 rounded-xl text-lg font-semibold hover:bg-[#eef2ff] transition"
           >
-            デモ版で出力イメージを見る
+            サンプルメモを見る
           </a>
         </div>
 
         <p className="mt-6 text-sm text-[#667]">
-          ※通常1〜2営業日以内を目安に、メールでご連絡します。
-        </p>
-
-        <p className="mt-2 text-sm text-[#667]">
           ※候補者名・連絡先・住所・顔写真などは伏せた状態でご利用ください。
         </p>
       </section>
