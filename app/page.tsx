@@ -76,7 +76,7 @@ export default function Home() {
           {[
             ["1", "求人票・募集要項を送る"],
             ["2", "匿名プロフィールを送る"],
-            ["3", "現場面談者に渡せるメモを受け取る"],
+            ["3", "共有しやすい1枚メモを受け取る"],
           ].map(([num, text]) => (
             <div key={num} className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-[#2aa7a1] font-bold mb-3">STEP {num}</div>
@@ -84,6 +84,11 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <p className="text-lg leading-relaxed text-[#51608f] mt-6">
+          作成したメモはGoogle Docs形式で共有します。必要に応じて文言を調整してから、
+          現場面談者の方へ共有いただけます。
+        </p>
       </section>
 
       {/* What it organizes */}
@@ -151,6 +156,8 @@ export default function Home() {
           以下は、配信業界の求人を例にしたサンプルです。
           実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに、
           現場面談者に渡しやすい形に整えてお送りします。
+          <br />
+          作成したメモはGoogle Docs形式で共有し、必要に応じて文言調整やPDF化も可能です。
         </p>
 
         <p className="text-sm font-bold text-[#2aa7a1] mb-3">
@@ -406,7 +413,9 @@ export default function Home() {
           <br />
           現場面談者に渡せる「候補者別の面談メモ」を1件無料で作成します。
           <br />
-          通常1〜2営業日以内を目安に、メールでご連絡します。
+          通常1〜2営業日以内を目安に、Google Docs形式で共有します。
+          <br />
+          必要に応じて、文言調整やPDF化も可能です。
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
