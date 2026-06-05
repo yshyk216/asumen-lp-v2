@@ -6,6 +6,18 @@ const samples = [
     category: "SaaS CS / 導入支援",
     title: "BtoB SaaS カスタマーサクセス",
     candidate: "法人営業3年・SaaS未経験",
+    jobNeeds: [
+      "導入支援",
+      "オンボーディング",
+      "顧客課題の整理",
+      "社内連携",
+    ],
+    candidateExperience: [
+      "法人営業3年",
+      "顧客折衝",
+      "提案経験",
+      "未経験商材のキャッチアップ",
+    ],
     point:
       "新規営業で培った顧客折衝力を、導入後のオンボーディングや活用支援に転用できるか。",
     topics: [
@@ -31,6 +43,18 @@ const samples = [
     category: "BPO / オペレーション",
     title: "BPOオペレーションリーダー",
     candidate: "コールセンターSV経験あり",
+    jobNeeds: [
+      "業務フロー設計",
+      "メンバー管理",
+      "品質改善",
+      "顧客折衝",
+    ],
+    candidateExperience: [
+      "コールセンターSV経験",
+      "メンバー育成",
+      "応対品質の改善",
+      "クレーム対応",
+    ],
     point:
       "既存オペレーションの管理だけでなく、業務改善や顧客との調整まで担えるか。",
     topics: [
@@ -56,6 +80,18 @@ const samples = [
     category: "導入コンサル / 業務改善SaaS",
     title: "導入コンサルタント",
     candidate: "SIerでのPMO経験あり",
+    jobNeeds: [
+      "As-Is整理",
+      "To-Be設計",
+      "導入プロジェクト推進",
+      "活用定着支援",
+    ],
+    candidateExperience: [
+      "SIerでのPMO経験",
+      "進行管理",
+      "関係者調整",
+      "課題整理",
+    ],
     point:
       "プロジェクト推進経験を、顧客業務に踏み込む導入支援に転用できるか。",
     topics: [
@@ -112,15 +148,17 @@ export default function Home() {
         </h1>
 
         <p className="text-2xl leading-relaxed mb-6">
-          明日めんは、求人票と匿名化した候補者プロフィールから、
+          現場面談者に渡せる
           <br />
-          現場面談者に渡せる「候補者別の面談メモ」を作成するAIです。
+          「候補者別の面談メモ」を作成します。
         </p>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
-          採用判断ではなく、面談前に「この候補者と何を話すとよさそうか」を整理します。
+          現場面談者に「候補者情報を読んでおいてください」と伝えるだけでは、
+          面談で見るポイントが人によってばらつきがちです。
           <br />
-          求人票と候補者プロフィールの接点から、見るべきポイント・聞くべき質問・候補者が気にしそうなことを1枚にまとめます。
+          明日めんは、求人票と匿名化した候補者プロフィールから、
+          候補者ごとの「見るべきポイント」を1枚に整理します。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -142,7 +180,7 @@ export default function Home() {
         </div>
 
         <p className="mt-5 text-sm text-[#667]">
-          ※実際の求人で確認したい方は、無料作成フォームをご利用ください。
+          求人URLと匿名プロフィールを送るだけ。通常1〜2営業日以内を目安にお返しします。
         </p>
       </section>
 
@@ -154,13 +192,65 @@ export default function Home() {
 
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <ul className="space-y-4 text-xl leading-relaxed">
-            <li>・現場面談者に、候補者ごとの事前共有をするのが大変</li>
-            <li>・面談直前まで、候補者情報を読んでもらえないことがある</li>
-            <li>・面談担当者によって、話題や深掘りの質にばらつきがある</li>
             <li>
-              ・現場面談者に毎回「候補者情報を読んでおいてください」と伝える負担がある
+              ・現場面談者に候補者情報を渡しても、どこまで読まれているか分からない
+            </li>
+            <li>
+              ・「この候補者はここを見てほしい」を毎回伝えるのが大変
+            </li>
+            <li>
+              ・面談担当者によって、聞くことや深掘りの質にばらつきがある
+            </li>
+            <li>
+              ・求人票と職務経歴書を見比べて、確認観点を作る時間が足りない
             </li>
           </ul>
+        </div>
+      </section>
+
+      {/* Value */}
+      <section className="max-w-5xl mx-auto px-8 py-12">
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+            明日めんができること
+          </p>
+
+          <h2 className="text-3xl font-bold mb-6">
+            現場面談者に渡す前の、
+            <br />
+            「何を見ればいいか」を整理します。
+          </h2>
+
+          <p className="text-xl leading-relaxed text-[#51608f] mb-8">
+            候補者ごとに、職務経歴のどこを見るべきか、
+            どんな質問をするとよいかは変わります。
+            <br />
+            明日めんは、求人票と候補者プロフィールの接点をもとに、
+            現場面談者が短時間で読みやすい形にまとめます。
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl bg-[#f5f5f7] p-6">
+              <p className="text-[#2aa7a1] font-bold mb-3">1</p>
+              <p className="text-xl font-bold leading-relaxed">
+                求人側で求められることを整理
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[#f5f5f7] p-6">
+              <p className="text-[#2aa7a1] font-bold mb-3">2</p>
+              <p className="text-xl font-bold leading-relaxed">
+                候補者側にある経験を整理
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[#f5f5f7] p-6">
+              <p className="text-[#2aa7a1] font-bold mb-3">3</p>
+              <p className="text-xl font-bold leading-relaxed">
+                現場で見るべきポイントに変換
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -172,9 +262,9 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            ["1", "求人票・募集要項を送る"],
+            ["1", "求人URLを送る"],
             ["2", "匿名プロフィールを送る"],
-            ["3", "共有しやすい1枚メモを受け取る"],
+            ["3", "1枚メモを受け取る"],
           ].map(([num, text]) => (
             <div key={num} className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-[#2aa7a1] font-bold mb-3">STEP {num}</div>
@@ -184,15 +274,15 @@ export default function Home() {
         </div>
 
         <p className="text-lg leading-relaxed text-[#51608f] mt-6">
-          作成したメモはGoogle Docs形式で共有します。必要に応じて文言を調整してから、
-          現場面談者の方へ共有いただけます。
+          作成したメモはGoogle Docs形式で共有します。
+          採用担当の方が必要に応じて文言を調整してから、現場面談者へ共有できます。
         </p>
       </section>
 
       {/* What it organizes */}
       <section className="max-w-5xl mx-auto px-8 py-12">
         <h2 className="text-3xl font-bold mb-6">
-          面談前に、候補者ごとの確認観点を整理します
+          面談前に、ここまで整理します
         </h2>
 
         <div className="bg-white rounded-2xl p-8 shadow-sm">
@@ -206,41 +296,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it generates */}
-      <section className="max-w-5xl mx-auto px-8 py-12">
-        <h2 className="text-3xl font-bold mb-6">
-          どのように面談メモを作るか
-        </h2>
-
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <p className="text-xl leading-relaxed text-[#51608f] mb-6">
-            明日めんは、求人票と候補者プロフィールをそのまま要約するのではなく、
-            求人側の業務内容と候補者側の経験が重なる部分を整理し、
-            現場面談者が自然に話せる確認観点に変換します。
-          </p>
-
-          <div className="grid md:grid-cols-5 gap-4">
-            {[
-              ["1", "求人側の業務内容を整理"],
-              ["2", "候補者側の経験を整理"],
-              ["3", "重なる実務場面を抽出"],
-              ["4", "確認観点と質問に変換"],
-              ["5", "現場に渡せる形に整形"],
-            ].map(([num, text]) => (
-              <div key={num} className="rounded-2xl bg-[#f5f5f7] p-5">
-                <div className="text-[#2aa7a1] font-bold mb-2">STEP {num}</div>
-                <p className="font-bold leading-relaxed">{text}</p>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-lg leading-relaxed text-[#667] mt-6">
-            出力は、見るポイント・話題候補・質問・根拠・候補者が気にしそうなことの形で整理します。
-            採用可否の判断や候補者のスコアリングは行いません。
-          </p>
-        </div>
-      </section>
-
       {/* Candidate-specific sample cards */}
       <section id="sample" className="max-w-5xl mx-auto px-8 py-12">
         <p className="text-sm font-bold text-[#2aa7a1] mb-3">
@@ -248,15 +303,17 @@ export default function Home() {
         </p>
 
         <h2 className="text-3xl font-bold mb-6">
-          候補者ごとに、面談で見るべきポイントが変わります
+          現場面談者が迷わないように、
+          <br />
+          候補者ごとの見るポイントを整理します
         </h2>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           以下は、架空の求人・候補者情報をもとにしたサンプルです。
-          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに、
-          現場面談者に渡しやすい形に整えてお送りします。
+          求人票と職務経歴書を見比べて、
+          「どこを深掘りするとよさそうか」を現場面談者に渡しやすい形にまとめます。
           <br />
-          作成したメモはGoogle Docs形式で共有し、必要に応じて文言調整やPDF化も可能です。
+          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに作成します。
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
@@ -275,16 +332,34 @@ export default function Home() {
                 {sample.title}
               </h3>
 
-              <p className="font-bold leading-relaxed mb-2">
+              <p className="font-bold leading-relaxed mb-6">
                 候補者：{sample.candidate}
               </p>
 
-              <p className="text-[#51608f] leading-relaxed mb-6">
-                {sample.point}
-              </p>
+              <div className="grid gap-4 mb-5">
+                <div className="rounded-2xl bg-[#f5f5f7] p-5">
+                  <p className="font-bold mb-3">求人側</p>
+                  <ul className="space-y-2 leading-relaxed text-[#51608f]">
+                    {sample.jobNeeds.map((item) => (
+                      <li key={item}>・{item}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="rounded-2xl bg-[#f5f5f7] p-5">
+                  <p className="font-bold mb-3">候補者側</p>
+                  <ul className="space-y-2 leading-relaxed text-[#51608f]">
+                    {sample.candidateExperience.map((item) => (
+                      <li key={item}>・{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
 
               <div className="border-t border-[#e5e7eb] pt-5 mb-5">
-                <p className="font-bold mb-3">👀 見るポイント</p>
+                <p className="font-bold mb-3">
+                  👀 見るポイント
+                </p>
                 <p className="text-lg font-semibold leading-relaxed">
                   {sample.point}
                 </p>
@@ -324,11 +399,15 @@ export default function Home() {
                   ))}
                 </div>
 
-                <p className="text-sm text-[#667]">根拠：{sample.reason}</p>
+                <p className="text-sm text-[#667]">
+                  根拠：{sample.reason}
+                </p>
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5">
-                <p className="font-bold mb-3">🤝 候補者が気にしそうなこと</p>
+                <p className="font-bold mb-3">
+                  🤝 候補者が気にしそうなこと
+                </p>
                 <ul className="space-y-2 leading-relaxed text-[#51608f]">
                   {sample.concerns.map((concern) => (
                     <li key={concern}>・{concern}</li>
@@ -343,25 +422,75 @@ export default function Home() {
       {/* Difference */}
       <section className="max-w-5xl mx-auto px-8 py-12">
         <h2 className="text-3xl font-bold mb-6">
-          普通の質問AIとの違い
+          その候補者だから聞きたい質問にします
         </h2>
+
+        <p className="text-lg leading-relaxed text-[#51608f] mb-8">
+          一般的な質問ではなく、求人側で求められることと候補者側の経験が重なる場面から、
+          面談で確認しやすい質問にします。
+        </p>
 
         <div className="space-y-6">
           {aiComparison.map((item) => (
-            <div key={item.normal} className="bg-white rounded-2xl p-8 shadow-sm">
+            <div
+              key={item.normal}
+              className="bg-white rounded-2xl p-8 shadow-sm"
+            >
               <p className="text-sm font-bold text-[#2aa7a1] mb-2">
-                普通の質問AI
+                一般的な質問
               </p>
               <p className="text-xl mb-5">「{item.normal}」</p>
 
               <p className="text-sm font-bold text-[#2d4aa5] mb-2">
-                明日めん
+                明日めんの質問
               </p>
               <p className="text-xl font-semibold leading-relaxed">
                 「{item.asumen}」
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Easy trial */}
+      <section className="max-w-5xl mx-auto px-8 py-12">
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+            無料作成で必要なもの
+          </p>
+
+          <h2 className="text-3xl font-bold mb-6">
+            送るものは、求人URLと匿名プロフィールだけ。
+          </h2>
+
+          <p className="text-xl leading-relaxed text-[#51608f] mb-6">
+            候補者名・連絡先・顔写真などは不要です。
+            求人URLと、個人を特定できない形にした候補者プロフィールを送っていただければ、
+            1件分の面談メモを作成してお返しします。
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl bg-[#f5f5f7] p-6">
+              <p className="font-bold mb-3">1. 求人URL</p>
+              <p className="leading-relaxed text-[#51608f]">
+                Wantedly・採用ページ・募集要項など
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[#f5f5f7] p-6">
+              <p className="font-bold mb-3">2. 匿名プロフィール</p>
+              <p className="leading-relaxed text-[#51608f]">
+                職務経験・スキル・自己PRなど
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[#f5f5f7] p-6">
+              <p className="font-bold mb-3">3. Google Docsで共有</p>
+              <p className="leading-relaxed text-[#51608f]">
+                必要に応じて文言調整・PDF化も可能
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
