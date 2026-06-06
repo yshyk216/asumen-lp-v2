@@ -132,6 +132,15 @@ const aiComparison = [
   },
 ];
 
+const fitJobs = [
+  "SaaSのカスタマーサクセス",
+  "導入支援 / オンボーディング",
+  "BPO / オペレーション",
+  "IT運用 / テクニカルサポート",
+  "業界特化SaaS",
+  "現場メンバーが面談に出る採用",
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f5f7] text-[#1f2f6f]">
@@ -148,17 +157,17 @@ export default function Home() {
         </h1>
 
         <p className="text-2xl leading-relaxed mb-6">
-          現場面談者に渡せる
+          採用担当が現場面談者に渡せる
           <br />
-          「候補者別の面談メモ」を作成します。
+          「候補者別の面談前メモ」を作成します。
         </p>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
-          現場面談者に「候補者情報を読んでおいてください」と伝えるだけでは、
-          面談で見るポイントが人によってばらつきがちです。
+          求人票と匿名化した候補者プロフィールをもとに、
+          現場面談者が面談前に見るべきポイントを1枚に整理します。
           <br />
-          明日めんは、求人票と匿名化した候補者プロフィールから、
-          候補者ごとの「見るべきポイント」を1枚に整理します。
+          採用担当が「この候補者とは、このあたりを話してほしい」と
+          現場に共有しやすくするための面談前メモです。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -168,7 +177,7 @@ export default function Home() {
             rel="noreferrer"
             className="inline-block bg-[#2d4aa5] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition text-center"
           >
-            無料で1件作ってもらう
+            無料で1件作成を依頼する
           </a>
 
           <a
@@ -216,9 +225,9 @@ export default function Home() {
           </p>
 
           <h2 className="text-3xl font-bold mb-6">
-            現場面談者に渡す前の、
+            採用担当が現場に渡しやすい形に、
             <br />
-            「何を見ればいいか」を整理します。
+            候補者ごとの確認観点を整理します。
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-8">
@@ -250,6 +259,36 @@ export default function Home() {
                 現場で見るべきポイントに変換
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fit */}
+      <section className="max-w-5xl mx-auto px-8 py-12">
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+            こんな求人で使いやすいです
+          </p>
+
+          <h2 className="text-3xl font-bold mb-6">
+            候補者によって、確認観点が変わりやすい求人に向いています。
+          </h2>
+
+          <p className="text-xl leading-relaxed text-[#51608f] mb-8">
+            明日めんは、経験の読み替えや現場での深掘り観点が変わりやすい求人で特に使いやすいです。
+            <br />
+            採用担当が現場面談者に「この候補者はここを見てほしい」と共有する場面を想定しています。
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {fitJobs.map((job) => (
+              <div
+                key={job}
+                className="rounded-2xl bg-[#f5f5f7] p-5 text-lg font-semibold"
+              >
+                ・{job}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -291,6 +330,7 @@ export default function Home() {
             <li>・現場面談者が見ておきたいポイント</li>
             <li>・そのまま使える質問・話すきっかけ</li>
             <li>・質問の根拠となる求人と経歴の接点</li>
+            <li>・採用担当から現場に共有したい一言メモ</li>
             <li>・候補者が気にしそうなこと</li>
           </ul>
         </div>
@@ -357,9 +397,7 @@ export default function Home() {
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5 mb-5">
-                <p className="font-bold mb-3">
-                  👀 見るポイント
-                </p>
+                <p className="font-bold mb-3">👀 見るポイント</p>
                 <p className="text-lg font-semibold leading-relaxed">
                   {sample.point}
                 </p>
@@ -399,9 +437,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <p className="text-sm text-[#667]">
-                  根拠：{sample.reason}
-                </p>
+                <p className="text-sm text-[#667]">根拠：{sample.reason}</p>
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5">
@@ -432,10 +468,7 @@ export default function Home() {
 
         <div className="space-y-6">
           {aiComparison.map((item) => (
-            <div
-              key={item.normal}
-              className="bg-white rounded-2xl p-8 shadow-sm"
-            >
+            <div key={item.normal} className="bg-white rounded-2xl p-8 shadow-sm">
               <p className="text-sm font-bold text-[#2aa7a1] mb-2">
                 一般的な質問
               </p>
@@ -498,9 +531,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold mb-5">
-              明日めんがやること
-            </h2>
+            <h2 className="text-2xl font-bold mb-5">明日めんがやること</h2>
 
             <ul className="space-y-4 text-lg leading-relaxed">
               <li>・求人票と候補者経験の接点を整理する</li>
@@ -552,7 +583,7 @@ export default function Home() {
         <p className="text-xl leading-relaxed text-[#51608f] mb-8">
           求人URLと匿名化した候補者プロフィールを送っていただければ、
           <br />
-          現場面談者に渡せる「候補者別の面談メモ」を1件無料で作成します。
+          現場面談者に渡せる「候補者別の面談前メモ」を1件無料で作成します。
           <br />
           通常1〜2営業日以内を目安に、Google Docs形式で共有します。
           <br />
@@ -566,7 +597,7 @@ export default function Home() {
             rel="noreferrer"
             className="inline-block bg-[#2d4aa5] text-white px-10 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition"
           >
-            無料で1件作ってもらう
+            無料で1件作成を依頼する
           </a>
 
           <a
