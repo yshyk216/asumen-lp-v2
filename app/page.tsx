@@ -618,6 +618,8 @@ export default function Home() {
           内容確認後、通常2〜3営業日以内を目安に、Google Docs形式で共有します。
           <br />
           必要に応じて、文言調整やPDF化も可能です。
+          <br />
+          <br />
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
