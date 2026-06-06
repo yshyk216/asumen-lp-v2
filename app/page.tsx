@@ -604,7 +604,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section id="contact" className="max-w-5xl mx-auto px-8 py-16 text-center">
+　　　　<section id="contact" className="max-w-5xl mx-auto px-8 pt-8 pb-16 text-center">
         <h2 className="text-3xl font-bold mb-6">
           まずは、御社の求人で1件作成します
         </h2>
