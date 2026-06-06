@@ -319,6 +319,7 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mt-6">
           作成したメモはGoogle Docs形式で共有します。
+           <br />
           採用担当の方が必要に応じて文言を調整してから、現場面談者へ共有できます。
         </p>
       </section>
