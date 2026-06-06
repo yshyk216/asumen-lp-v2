@@ -189,7 +189,7 @@ export default function Home() {
         </div>
 
         <p className="mt-5 text-sm text-[#667]">
-          求人URLと匿名プロフィールを送るだけ。通常1〜2営業日以内を目安にお返しします。
+          求人URLと匿名プロフィールを送るだけ。内容確認後、通常2〜3営業日以内を目安にお返しします。
         </p>
       </section>
 
@@ -453,6 +453,26 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <div className="mt-10 bg-[#eef2ff] rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-4">
+            このような面談前メモを、御社の求人で作成します
+          </h3>
+
+          <p className="text-lg leading-relaxed text-[#51608f] mb-6">
+            求人URLと匿名化した候補者プロフィールを送っていただければ、
+            現場面談者に渡せる候補者別メモを1件無料で作成します。
+          </p>
+
+          <a
+            href={TALLY_FORM_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-[#2d4aa5] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition text-center"
+          >
+            無料で1件作成する
+          </a>
+        </div>
       </section>
 
       {/* Difference */}
@@ -585,7 +605,7 @@ export default function Home() {
           <br />
           現場面談者に渡せる「候補者別の面談前メモ」を1件無料で作成します。
           <br />
-          通常1〜2営業日以内を目安に、Google Docs形式で共有します。
+          内容確認後、通常2〜3営業日以内を目安に、Google Docs形式で共有します。
           <br />
           必要に応じて、文言調整やPDF化も可能です。
         </p>
