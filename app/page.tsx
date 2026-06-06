@@ -466,6 +466,7 @@ export default function Home() {
 
           <p className="text-lg leading-relaxed text-[#51608f] mb-6">
             求人URLと匿名化した候補者プロフィールを送っていただければ、
+             <br />
             現場面談者に渡せる候補者別メモを1件無料で作成します。
           </p>
 
