@@ -177,7 +177,7 @@ export default function Home() {
             rel="noreferrer"
             className="inline-block bg-[#2d4aa5] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition text-center"
           >
-            無料で1件作成を依頼する
+            無料で1件作成する
           </a>
 
           <a
@@ -597,7 +597,7 @@ export default function Home() {
             rel="noreferrer"
             className="inline-block bg-[#2d4aa5] text-white px-10 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition"
           >
-            無料で1件作成を依頼する
+            無料で1件作成する
           </a>
 
           <a
