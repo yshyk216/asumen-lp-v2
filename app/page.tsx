@@ -145,7 +145,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f5f7] text-[#1f2f6f]">
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-8 py-20">
+      <section className="max-w-4xl mx-auto px-8 py-20">
         <p className="text-lg mb-4 text-[#2aa7a1] font-semibold">
           採用担当の方へ
         </p>
