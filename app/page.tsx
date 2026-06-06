@@ -164,6 +164,7 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
           明日めんは、求人票と匿名化した候補者プロフィールをもとに、
+          <br />
           現場面談者が面談前に見るべきポイントを1枚に整理します。
           <br />
           採用担当が「この候補者とは、このあたりを話してほしい」と
