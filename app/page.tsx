@@ -355,6 +355,7 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           以下は、架空の求人・候補者情報をもとにしたサンプルです。
+           <br />
           求人票と職務経歴書を見比べて、
           「どこを深掘りするとよさそうか」を現場面談者に渡しやすい形にまとめます。
           <br />
@@ -489,6 +490,7 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           一般的な質問ではなく、求人側で求められることと候補者側の経験が重なる場面から、
+           <br />
           面談で確認しやすい質問にします。
         </p>
 
