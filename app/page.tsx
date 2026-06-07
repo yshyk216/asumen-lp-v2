@@ -429,6 +429,7 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           「コミュニケーション力はありますか？」のような一般的な質問ではなく、
+           <br />
           求人側で求められることと候補者側の経験が重なる場面から、
           面談で確認しやすい質問にします。
         </p>
@@ -465,6 +466,7 @@ export default function Home() {
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-6">
             既存の求人URLと、職務経歴書やプロフィールのテキストを、
+             <br />
             個人情報を伏せた状態で送ってください。
             <br />
             整った資料でなくても、面談準備に必要な範囲が分かれば作成できます。
@@ -535,6 +537,7 @@ export default function Home() {
 
           <p className="text-xl leading-relaxed mb-4">
             候補者名・住所・電話番号・メールアドレス・顔写真・SNS URLなど、
+             <br />
             個人を直接特定できる情報は入力しないでください。
           </p>
 
