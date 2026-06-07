@@ -255,7 +255,7 @@ export default function Home() {
             求人内容と匿名プロフィールの接点をもとに、
             <br />
             現場面談者が短時間で読みやすい面談前メモを作成します。
-            </p>
+          </p>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
@@ -355,6 +355,8 @@ export default function Home() {
           以下は、架空の求人内容・匿名プロフィールをもとにしたサンプルです。
           <br />
           実際の無料作成では、御社の求人URLと匿名プロフィールをもとに作成します。
+          <br />
+          作成後の文面は、必要に応じて御社用に調整してから共有できます。
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
