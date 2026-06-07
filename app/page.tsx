@@ -206,7 +206,10 @@ export default function Home() {
           必要なのは、
           <span className="font-bold text-[#1f2f6f]"> 求人URL </span>
           と
-          <span className="font-bold text-[#1f2f6f]"> 匿名プロフィール </span>
+          <span className="font-bold text-[#1f2f6f]">
+            {" "}
+            匿名プロフィール{" "}
+          </span>
           の2つだけ。通常2〜3営業日以内を目安にお返しします。
         </p>
       </section>
@@ -249,9 +252,10 @@ export default function Home() {
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-            <span className="font-bold text-[#1f2f6f]">求人URL</span> と{" "}
+            求人内容と
             <span className="font-bold text-[#1f2f6f]">
-              匿名プロフィール
+              {" "}
+              匿名プロフィール{" "}
             </span>
             の接点をもとに、
             <br />
@@ -353,7 +357,7 @@ export default function Home() {
         </h2>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
-          以下は、架空の求人URL・匿名プロフィールをもとにしたサンプルです。
+          以下は、架空の求人内容・匿名プロフィールをもとにしたサンプルです。
           <br />
           実際の無料作成では、御社の求人URLと匿名プロフィールをもとに作成します。
         </p>
@@ -510,7 +514,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-5">明日めんがやること</h2>
 
             <ul className="space-y-4 text-lg leading-relaxed">
-              <li>・求人URLと匿名プロフィールの接点を整理する</li>
+              <li>・求人内容と匿名プロフィールの接点を整理する</li>
               <li>・面談で確認したい実務場面を見つける</li>
               <li>・現場面談者に渡せる面談前メモを作る</li>
               <li>・面談後に残すとよさそうな観点も整理する</li>
@@ -548,7 +552,8 @@ export default function Home() {
           </p>
 
           <p className="text-xl leading-relaxed text-[#51608f]">
-            匿名プロフィールには、職務経験・スキル・自己PRなど、面談準備に必要な範囲だけを記載してください。
+            匿名プロフィールには、職務経験・スキル・自己PRなど、
+            面談準備に必要な範囲だけを記載してください。
           </p>
         </div>
       </section>
