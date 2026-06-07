@@ -583,7 +583,7 @@ export default function Home() {
             <iframe
               src={TALLY_EMBED_URL}
               width="100%"
-              height="780"
+              height="760"
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
