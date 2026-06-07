@@ -308,7 +308,7 @@ export default function Home() {
           {[
             ["1", "求人URLを送る"],
             ["2", "匿名プロフィールを送る"],
-            ["3", "1枚メモを受け取る"],
+            ["3", "面談前メモを受け取る"],
           ].map(([num, text]) => (
             <div key={num} className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-[#2aa7a1] font-bold mb-3">STEP {num}</div>
