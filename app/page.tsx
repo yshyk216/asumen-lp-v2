@@ -174,9 +174,10 @@ export default function Home() {
         </h1>
 
         <p className="text-2xl leading-relaxed mb-6">
-          求人票と匿名プロフィールから、
+          <span className="font-bold">求人URL</span> と{" "}
+          <span className="font-bold">匿名プロフィール</span> から、
           <br />
-          現場面談者にそのまま渡せる「候補者別メモ」を作成します。
+          現場面談者にそのまま渡せる「面談前メモ」を作成します。
         </p>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
@@ -202,7 +203,11 @@ export default function Home() {
         </div>
 
         <p className="mt-5 text-sm text-[#667]">
-          求人URLと匿名プロフィールを送るだけ。通常2〜3営業日以内を目安にお返しします。
+          必要なのは、
+          <span className="font-bold text-[#1f2f6f]"> 求人URL </span>
+          と
+          <span className="font-bold text-[#1f2f6f]"> 匿名プロフィール </span>
+          の2つだけ。通常2〜3営業日以内を目安にお返しします。
         </p>
       </section>
 
@@ -244,7 +249,11 @@ export default function Home() {
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-            求人票と候補者プロフィールの接点をもとに、
+            <span className="font-bold text-[#1f2f6f]">求人URL</span> と{" "}
+            <span className="font-bold text-[#1f2f6f]">
+              匿名プロフィール
+            </span>
+            の接点をもとに、
             <br />
             現場面談者が短時間で読みやすい面談前メモを作成します。
           </p>
@@ -317,11 +326,20 @@ export default function Home() {
           ))}
         </div>
 
-        <p className="text-lg leading-relaxed text-[#51608f] mt-6">
-          作成したメモはGoogle Docs形式で共有します。
-          <br />
-          採用担当の方が必要に応じて文言を調整してから、現場面談者へ共有できます。
-        </p>
+        <div className="mt-6 rounded-2xl bg-[#eef2ff] p-6">
+          <p className="text-lg leading-relaxed text-[#51608f]">
+            必要なのは、
+            <span className="font-bold text-[#1f2f6f]"> 求人URL </span>
+            と
+            <span className="font-bold text-[#1f2f6f]">
+              {" "}
+              匿名プロフィール{" "}
+            </span>
+            の2つだけ。
+            <br />
+            作成した面談前メモはGoogle Docs形式で共有します。
+          </p>
+        </div>
       </section>
 
       {/* Sample */}
@@ -335,9 +353,9 @@ export default function Home() {
         </h2>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
-          以下は、架空の求人・候補者情報をもとにしたサンプルです。
+          以下は、架空の求人URL・匿名プロフィールをもとにしたサンプルです。
           <br />
-          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに作成します。
+          実際の無料作成では、御社の求人URLと匿名プロフィールをもとに作成します。
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
@@ -429,9 +447,16 @@ export default function Home() {
           </h3>
 
           <p className="text-lg leading-relaxed text-[#51608f] mb-6">
-            求人URLと匿名化した候補者プロフィールを送っていただければ、
+            必要なのは、
+            <span className="font-bold text-[#1f2f6f]"> 求人URL </span>
+            と
+            <span className="font-bold text-[#1f2f6f]">
+              {" "}
+              匿名プロフィール{" "}
+            </span>
+            の2つだけ。
             <br />
-            現場面談者に渡せる候補者別メモを1件無料で作成します。
+            現場面談者に渡せる面談前メモを1件無料で作成します。
           </p>
 
           <a
@@ -485,9 +510,9 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-5">明日めんがやること</h2>
 
             <ul className="space-y-4 text-lg leading-relaxed">
-              <li>・求人票と候補者経験の接点を整理する</li>
+              <li>・求人URLと匿名プロフィールの接点を整理する</li>
               <li>・面談で確認したい実務場面を見つける</li>
-              <li>・現場面談者に渡せる候補者別メモを作る</li>
+              <li>・現場面談者に渡せる面談前メモを作る</li>
               <li>・面談後に残すとよさそうな観点も整理する</li>
               <li>・候補者が気にしそうなことも整理する</li>
             </ul>
@@ -523,7 +548,7 @@ export default function Home() {
           </p>
 
           <p className="text-xl leading-relaxed text-[#51608f]">
-            職務経験・スキル・自己PRなど、面談準備に必要な範囲だけで利用できます。
+            匿名プロフィールには、職務経験・スキル・自己PRなど、面談準備に必要な範囲だけを記載してください。
           </p>
         </div>
       </section>
@@ -540,7 +565,14 @@ export default function Home() {
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-            求人URLと、匿名化した候補者プロフィールを貼り付けてください。
+            必要なのは、
+            <span className="font-bold text-[#1f2f6f]"> 求人URL </span>
+            と
+            <span className="font-bold text-[#1f2f6f]">
+              {" "}
+              匿名プロフィール{" "}
+            </span>
+            の2つだけ。
             <br />
             内容確認後、通常2〜3営業日以内を目安に、Google Docs形式で共有します。
           </p>
