@@ -8,22 +8,56 @@ const samples = [
     category: "SaaS CS / 導入支援",
     title: "BtoB SaaS カスタマーサクセス",
     candidate: "法人営業3年・SaaS未経験",
-    jobNeeds: ["導入支援", "オンボーディング", "顧客課題の整理", "社内連携"],
-    candidateExperience: ["法人営業3年", "顧客折衝", "提案経験", "未経験商材のキャッチアップ"],
-    point:
-      "営業での顧客折衝力を、導入後のオンボーディングや継続的な活用支援に転用できるか。",
-    topics: ["CS業務への職種理解", "導入後の顧客伴走経験", "未経験領域のキャッチアップ方法"],
-    questions: [
-      "新規提案ではなく、導入後の顧客に継続的に伴走した経験はありますか？",
-      "顧客要望と社内リソースが合わない時、どのように調整していましたか？",
-      "初めて扱う商材や業務知識を、どのようにキャッチアップしていましたか？",
+    summary: {
+      experience: "法人営業・顧客折衝の経験あり。",
+      focus: "CS業務理解・導入後の伴走・未経験領域の学び方",
+    },
+    jobNeeds: [
+      "導入支援",
+      "オンボーディング",
+      "顧客課題の整理",
+      "社内連携",
     ],
-    tags: ["職種理解", "顧客折衝", "キャッチアップ"],
-    reason: "法人営業経験 × SaaS導入後の顧客伴走",
+    candidateExperience: [
+      "法人営業3年",
+      "顧客折衝",
+      "提案経験",
+      "未経験商材のキャッチアップ",
+    ],
+    points: [
+      "導入後の顧客支援の実務感をどこまで理解しているか",
+      "顧客要望を整理し、社内でどう調整していたか",
+      "営業経験を導入支援にどうつなげられそうか",
+    ],
+    questions: [
+      {
+        title: "導入後の顧客支援",
+        text: "初めて扱う業務を任された時って、まず何から理解することが多かったですか？",
+        tags: ["職種理解", "業務理解", "キャッチアップ"],
+        reason: "法人営業 × SaaS導入後の顧客伴走",
+      },
+      {
+        title: "複数顧客対応",
+        text: "複数の顧客対応や社内確認が重なった時って、まず何から整理してました？",
+        tags: ["優先順位", "初動", "整理"],
+        reason: "既存顧客フォロー × 複数顧客対応",
+      },
+      {
+        title: "顧客要望の整理と相談",
+        text: "顧客から『もっとこう使いたい』と相談された時って、どこまで自分で整理して、どこから周りに相談してました？",
+        tags: ["顧客対応", "情報整理", "相談"],
+        reason: "顧客要望ヒアリング × 導入支援",
+      },
+    ],
+    feedbacks: [
+      "導入後の顧客支援の実務感を理解していそうか",
+      "未経験領域をどうキャッチアップしてきたか",
+      "顧客要望への対応で具体例が出たか",
+    ],
     concerns: [
-      "SaaS未経験でも立ち上がれる育成体制",
-      "営業経験がCSでどう活きるか",
-      "導入支援の泥臭さをどこまで理解しているか",
+      "未経験領域のサポート",
+      "導入後の伴走体制",
+      "SaaSや管理画面の学び方",
     ],
   },
   {
@@ -31,38 +65,114 @@ const samples = [
     category: "BPO / オペレーション",
     title: "BPOオペレーションリーダー",
     candidate: "コールセンターSV経験あり",
-    jobNeeds: ["業務フロー設計", "メンバー管理", "品質改善", "顧客折衝"],
-    candidateExperience: ["コールセンターSV経験", "メンバー育成", "応対品質の改善", "クレーム対応"],
-    point:
-      "既存オペレーションの管理だけでなく、業務改善や顧客との調整まで担えるか。",
-    topics: ["現場改善の進め方", "メンバー管理と品質維持", "顧客要望との優先順位調整"],
-    questions: [
-      "現場でミスや遅延が続いた時、原因をどう整理して改善しましたか？",
-      "メンバーの稼働状況と顧客要望がぶつかった時、どう優先順位を決めていましたか？",
-      "属人的になっていた業務を、仕組み化した経験はありますか？",
+    summary: {
+      experience: "SV・応対品質改善の経験あり。",
+      focus: "現場改善・優先順位・仕組み化",
+    },
+    jobNeeds: [
+      "業務フロー設計",
+      "メンバー管理",
+      "品質改善",
+      "顧客折衝",
     ],
-    tags: ["品質改善", "優先順位", "仕組み化"],
-    reason: "コールセンターSV経験 × BPO現場の運用改善",
-    concerns: ["任される裁量", "現場改善にどこまで関われるか", "顧客折衝の頻度"],
+    candidateExperience: [
+      "コールセンターSV経験",
+      "メンバー育成",
+      "応対品質の改善",
+      "クレーム対応",
+    ],
+    points: [
+      "既存オペレーションの管理経験を改善業務にどう広げられそうか",
+      "メンバー対応と顧客要望が重なる場面でどう優先順位を決めていたか",
+      "属人的な対応を仕組み化した経験があるか",
+    ],
+    questions: [
+      {
+        title: "現場改善の進め方",
+        text: "現場でミスや遅延が続いた時って、原因をどう整理して改善してました？",
+        tags: ["品質改善", "原因整理", "現場理解"],
+        reason: "コールセンターSV経験 × BPO現場の運用改善",
+      },
+      {
+        title: "優先順位のつけ方",
+        text: "メンバーの稼働状況と顧客要望がぶつかった時って、まず何から整理してました？",
+        tags: ["優先順位", "整理", "顧客対応"],
+        reason: "メンバー管理 × 顧客要望対応",
+      },
+      {
+        title: "属人化への対応",
+        text: "属人的になっていた業務を、他の人でも回せるようにした経験ってありますか？",
+        tags: ["仕組み化", "共有", "改善提案"],
+        reason: "応対品質改善 × 業務フロー設計",
+      },
+    ],
+    feedbacks: [
+      "現場改善を具体的な手順で話せたか",
+      "顧客要望とメンバー稼働の優先順位が具体的だったか",
+      "属人化を仕組み化した経験が出たか",
+    ],
+    concerns: [
+      "任される裁量",
+      "現場改善にどこまで関われるか",
+      "顧客折衝の頻度",
+    ],
   },
   {
     label: "SAMPLE 03",
     category: "導入コンサル / 業務改善SaaS",
     title: "導入コンサルタント",
     candidate: "SIerでのPMO経験あり",
-    jobNeeds: ["As-Is整理", "To-Be設計", "導入プロジェクト推進", "活用定着支援"],
-    candidateExperience: ["SIerでのPMO経験", "進行管理", "関係者調整", "課題整理"],
-    point:
-      "プロジェクト推進経験を、顧客業務に踏み込む導入支援に転用できるか。",
-    topics: ["曖昧な要望の整理", "複数部門との合意形成", "導入後の定着支援"],
-    questions: [
-      "顧客の要望が曖昧な状態から、業務要件を整理した経験はありますか？",
-      "複数部門の意見が割れた時、どのように合意形成していましたか？",
-      "導入後に現場で使われないリスクをどう防いでいましたか？",
+    summary: {
+      experience: "PMO・関係者調整の経験あり。",
+      focus: "要件整理・合意形成・定着支援",
+    },
+    jobNeeds: [
+      "As-Is整理",
+      "To-Be設計",
+      "導入プロジェクト推進",
+      "活用定着支援",
     ],
-    tags: ["要件整理", "合意形成", "定着支援"],
-    reason: "PMO経験 × 顧客業務に踏み込む導入支援",
-    concerns: ["導入後の責任範囲", "プロダクト理解のキャッチアップ", "顧客業務にどこまで入り込むか"],
+    candidateExperience: [
+      "SIerでのPMO経験",
+      "進行管理",
+      "関係者調整",
+      "課題整理",
+    ],
+    points: [
+      "PMO経験を顧客業務に踏み込む導入支援にどうつなげられそうか",
+      "要望が曖昧な状態で、どこから整理していたか",
+      "導入後に現場で使われる状態まで意識できそうか",
+    ],
+    questions: [
+      {
+        title: "曖昧な要望の整理",
+        text: "顧客の要望が曖昧な状態だった時って、まず何から確認してました？",
+        tags: ["要件整理", "情報整理", "顧客対応"],
+        reason: "PMO経験 × 顧客業務の整理",
+      },
+      {
+        title: "複数部門との合意形成",
+        text: "複数部門の意見が割れた時って、どのあたりが一番すり合わせしづらかったですか？",
+        tags: ["合意形成", "関係者調整", "期待値調整"],
+        reason: "関係者調整 × 導入プロジェクト推進",
+      },
+      {
+        title: "導入後の定着支援",
+        text: "導入後に現場で使われないリスクがありそうな時って、どこを先に確認してました？",
+        tags: ["定着支援", "現場理解", "確認"],
+        reason: "課題整理 × 活用定着支援",
+      },
+    ],
+    feedbacks: [
+      "曖昧な要望を整理する具体例が出たか",
+      "複数部門とのすり合わせ経験が具体的だったか",
+      "導入後の定着まで意識して話せたか",
+    ],
+    concerns: [
+      "導入後の責任範囲",
+      "プロダクト理解のキャッチアップ",
+      "顧客業務にどこまで入り込むか",
+    ],
   },
 ];
 
@@ -70,17 +180,17 @@ const aiComparison = [
   {
     normal: "優先順位はどうつけていますか？",
     asumen:
-      "メンバーの稼働状況と顧客要望がぶつかった時、どう優先順位を決めていましたか？",
+      "メンバーの稼働状況と顧客要望がぶつかった時って、まず何から整理してました？",
   },
   {
     normal: "トラブル対応経験を教えてください。",
     asumen:
-      "現場でミスや遅延が続いた時、原因をどう整理して改善しましたか？",
+      "現場でミスや遅延が続いた時って、原因をどう整理して改善してました？",
   },
   {
     normal: "新しい知識をキャッチアップできますか？",
     asumen:
-      "初めて扱う商材や業務知識を、どのようにキャッチアップしていましたか？",
+      "初めて扱う業務を任された時って、まず何から理解することが多かったですか？",
   },
 ];
 
@@ -151,11 +261,21 @@ export default function Home() {
 
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <ul className="space-y-4 text-xl leading-relaxed">
-            <li>・候補者の共感や雰囲気は良さそうでも、職種理解や自走力までは見えにくい</li>
-            <li>・CS/導入支援/BPOに必要な泥臭い顧客対応力を、面談でどう確認するか迷う</li>
-            <li>・現場面談者に「この候補者はここを見てほしい」を都度補足している</li>
-            <li>・面談後のフィードバックが「良さそうでした」で終わり、次の判断に使いづらい</li>
-            <li>・カジュアル面談が増え、候補者ごとの確認観点を整理する時間が足りない</li>
+            <li>
+              ・候補者の共感や雰囲気は良さそうでも、職種理解や自走力までは見えにくい
+            </li>
+            <li>
+              ・CS/導入支援/BPOに必要な実務感を、面談でどう確認するか迷う
+            </li>
+            <li>
+              ・現場面談者に「この候補者はここを見てほしい」を都度補足している
+            </li>
+            <li>
+              ・面談後のフィードバックが「良さそうでした」で終わり、次の判断に使いづらい
+            </li>
+            <li>
+              ・カジュアル面談が増え、候補者ごとの確認観点を整理する時間が足りない
+            </li>
           </ul>
         </div>
       </section>
@@ -199,7 +319,7 @@ export default function Home() {
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
               <p className="text-[#2aa7a1] font-bold mb-3">3</p>
               <p className="text-xl font-bold leading-relaxed">
-                現場で深掘りすべきポイントを1枚に整理
+                面談後に残す観点まで1枚に整理
               </p>
             </div>
           </div>
@@ -276,7 +396,7 @@ export default function Home() {
             <li>・自走力・キャッチアップ力を確認する質問</li>
             <li>・現場での再現性を見たい経験</li>
             <li>・質問の根拠となる求人と経歴の接点</li>
-            <li>・採用担当から現場に共有したい一言メモ</li>
+            <li>・面談後フィードバックで見てほしいこと</li>
             <li>・候補者が気にしそうなこと</li>
           </ul>
         </div>
@@ -297,10 +417,8 @@ export default function Home() {
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           以下は、架空の求人・候補者情報をもとにしたサンプルです。
           <br />
-          求人票と職務経歴書を見比べて、
-          「どこを深掘りするとよさそうか」を現場面談者に渡しやすい形にまとめます。
-          <br />
-          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに作成します。
+          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに、
+          現場面談者にそのまま渡せる縦型の面談前メモとして作成します。
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
@@ -323,6 +441,13 @@ export default function Home() {
                 候補者：{sample.candidate}
               </p>
 
+              <div className="rounded-2xl bg-[#eef2ff] p-5 mb-5">
+                <p className="font-bold mb-2">{sample.summary.experience}</p>
+                <p className="leading-relaxed text-[#51608f]">
+                  「{sample.summary.focus}」あたりを確認できるとよさそう。
+                </p>
+              </div>
+
               <div className="grid gap-4 mb-5">
                 <div className="rounded-2xl bg-[#f5f5f7] p-5">
                   <p className="font-bold mb-3">求人側</p>
@@ -344,47 +469,56 @@ export default function Home() {
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5 mb-5">
-                <p className="font-bold mb-3">👀 見るポイント</p>
-                <p className="text-lg font-semibold leading-relaxed">
-                  {sample.point}
-                </p>
-              </div>
-
-              <div className="border-t border-[#e5e7eb] pt-5 mb-5">
-                <p className="font-bold mb-3">💬 話題候補</p>
+                <p className="font-bold mb-3">👀 まず見るポイント</p>
                 <ul className="space-y-2 leading-relaxed">
-                  {sample.topics.map((topic) => (
-                    <li key={topic}>・{topic}</li>
+                  {sample.points.map((point) => (
+                    <li key={point}>・{point}</li>
                   ))}
                 </ul>
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5 mb-5">
-                <p className="font-bold mb-3">📝 聞くならこの3問</p>
+                <p className="font-bold mb-3">💬 聞くならこの3問</p>
 
-                <ul className="space-y-3 leading-relaxed">
+                <div className="space-y-5">
                   {sample.questions.map((question, index) => (
-                    <li key={question}>
-                      <span className="font-bold text-[#2aa7a1]">
-                        Q{index + 1}.{" "}
-                      </span>
-                      「{question}」
-                    </li>
-                  ))}
-                </ul>
+                    <div key={question.text}>
+                      <p className="font-bold text-[#2aa7a1] mb-2">
+                        {index + 1}. {question.title}
+                      </p>
 
-                <div className="flex flex-wrap gap-2 mt-4 mb-3">
-                  {sample.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-[#eef2ff] px-3 py-1 text-sm font-semibold text-[#2d4aa5]"
-                    >
-                      {tag}
-                    </span>
+                      <p className="text-lg font-semibold leading-relaxed mb-3">
+                        「{question.text}」
+                      </p>
+
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {question.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full bg-[#eef2ff] px-3 py-1 text-sm font-semibold text-[#2d4aa5]"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      <p className="text-sm text-[#667]">
+                        根拠：{question.reason}
+                      </p>
+                    </div>
                   ))}
                 </div>
+              </div>
 
-                <p className="text-sm text-[#667]">根拠：{sample.reason}</p>
+              <div className="border-t border-[#e5e7eb] pt-5 mb-5">
+                <p className="font-bold mb-3">
+                  📝 面談後フィードバックで見てほしいこと
+                </p>
+                <ul className="space-y-2 leading-relaxed text-[#51608f]">
+                  {sample.feedbacks.map((feedback) => (
+                    <li key={feedback}>・{feedback}</li>
+                  ))}
+                </ul>
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5">
@@ -429,14 +563,17 @@ export default function Home() {
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           「コミュニケーション力はありますか？」のような一般的な質問ではなく、
-           <br />
+          <br />
           求人側で求められることと候補者側の経験が重なる場面から、
           面談で確認しやすい質問にします。
         </p>
 
         <div className="space-y-6">
           {aiComparison.map((item) => (
-            <div key={item.normal} className="bg-white rounded-2xl p-8 shadow-sm">
+            <div
+              key={item.normal}
+              className="bg-white rounded-2xl p-8 shadow-sm"
+            >
               <p className="text-sm font-bold text-[#2aa7a1] mb-2">
                 一般的な質問
               </p>
@@ -466,7 +603,7 @@ export default function Home() {
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-6">
             既存の求人URLと、職務経歴書やプロフィールのテキストを、
-             <br />
+            <br />
             個人情報を伏せた状態で送ってください。
             <br />
             整った資料でなくても、面談準備に必要な範囲が分かれば作成できます。
@@ -508,6 +645,7 @@ export default function Home() {
               <li>・面談で確認したい実務場面を見つける</li>
               <li>・職種理解・自走力・現場再現性を見る観点を整理する</li>
               <li>・現場面談者に渡せる候補者別メモを作る</li>
+              <li>・面談後に残すとよさそうな観点も整理する</li>
               <li>・候補者が気にしそうなことも整理する</li>
             </ul>
           </div>
@@ -537,7 +675,7 @@ export default function Home() {
 
           <p className="text-xl leading-relaxed mb-4">
             候補者名・住所・電話番号・メールアドレス・顔写真・SNS URLなど、
-             <br />
+            <br />
             個人を直接特定できる情報は入力しないでください。
           </p>
 
