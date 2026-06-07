@@ -252,15 +252,10 @@ export default function Home() {
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-            求人内容と
-            <span className="font-bold text-[#1f2f6f]">
-              {" "}
-              匿名プロフィール{" "}
-            </span>
-            の接点をもとに、
-            <br />
-            現場面談者が短時間で読みやすい面談前メモを作成します。
-          </p>
+  　　　　　　求人内容と匿名プロフィールの接点をもとに、
+  　　　　　　<br />
+  　　　　　　現場面談者が短時間で読みやすい面談前メモを作成します。
+　　　　　　</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
