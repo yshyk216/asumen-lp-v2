@@ -1,4 +1,6 @@
 const TALLY_FORM_URL = "https://tally.so/r/Pdk2rB";
+const TALLY_EMBED_URL =
+  "https://tally.so/embed/Pdk2rB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
 
 const samples = [
   {
@@ -6,25 +8,11 @@ const samples = [
     category: "SaaS CS / 導入支援",
     title: "BtoB SaaS カスタマーサクセス",
     candidate: "法人営業3年・SaaS未経験",
-    jobNeeds: [
-      "導入支援",
-      "オンボーディング",
-      "顧客課題の整理",
-      "社内連携",
-    ],
-    candidateExperience: [
-      "法人営業3年",
-      "顧客折衝",
-      "提案経験",
-      "未経験商材のキャッチアップ",
-    ],
+    jobNeeds: ["導入支援", "オンボーディング", "顧客課題の整理", "社内連携"],
+    candidateExperience: ["法人営業3年", "顧客折衝", "提案経験", "未経験商材のキャッチアップ"],
     point:
       "営業での顧客折衝力を、導入後のオンボーディングや継続的な活用支援に転用できるか。",
-    topics: [
-      "CS業務への職種理解",
-      "導入後の顧客伴走経験",
-      "未経験領域のキャッチアップ方法",
-    ],
+    topics: ["CS業務への職種理解", "導入後の顧客伴走経験", "未経験領域のキャッチアップ方法"],
     questions: [
       "新規提案ではなく、導入後の顧客に継続的に伴走した経験はありますか？",
       "顧客要望と社内リソースが合わない時、どのように調整していましたか？",
@@ -43,25 +31,11 @@ const samples = [
     category: "BPO / オペレーション",
     title: "BPOオペレーションリーダー",
     candidate: "コールセンターSV経験あり",
-    jobNeeds: [
-      "業務フロー設計",
-      "メンバー管理",
-      "品質改善",
-      "顧客折衝",
-    ],
-    candidateExperience: [
-      "コールセンターSV経験",
-      "メンバー育成",
-      "応対品質の改善",
-      "クレーム対応",
-    ],
+    jobNeeds: ["業務フロー設計", "メンバー管理", "品質改善", "顧客折衝"],
+    candidateExperience: ["コールセンターSV経験", "メンバー育成", "応対品質の改善", "クレーム対応"],
     point:
       "既存オペレーションの管理だけでなく、業務改善や顧客との調整まで担えるか。",
-    topics: [
-      "現場改善の進め方",
-      "メンバー管理と品質維持",
-      "顧客要望との優先順位調整",
-    ],
+    topics: ["現場改善の進め方", "メンバー管理と品質維持", "顧客要望との優先順位調整"],
     questions: [
       "現場でミスや遅延が続いた時、原因をどう整理して改善しましたか？",
       "メンバーの稼働状況と顧客要望がぶつかった時、どう優先順位を決めていましたか？",
@@ -69,36 +43,18 @@ const samples = [
     ],
     tags: ["品質改善", "優先順位", "仕組み化"],
     reason: "コールセンターSV経験 × BPO現場の運用改善",
-    concerns: [
-      "任される裁量",
-      "現場改善にどこまで関われるか",
-      "顧客折衝の頻度",
-    ],
+    concerns: ["任される裁量", "現場改善にどこまで関われるか", "顧客折衝の頻度"],
   },
   {
     label: "SAMPLE 03",
     category: "導入コンサル / 業務改善SaaS",
     title: "導入コンサルタント",
     candidate: "SIerでのPMO経験あり",
-    jobNeeds: [
-      "As-Is整理",
-      "To-Be設計",
-      "導入プロジェクト推進",
-      "活用定着支援",
-    ],
-    candidateExperience: [
-      "SIerでのPMO経験",
-      "進行管理",
-      "関係者調整",
-      "課題整理",
-    ],
+    jobNeeds: ["As-Is整理", "To-Be設計", "導入プロジェクト推進", "活用定着支援"],
+    candidateExperience: ["SIerでのPMO経験", "進行管理", "関係者調整", "課題整理"],
     point:
       "プロジェクト推進経験を、顧客業務に踏み込む導入支援に転用できるか。",
-    topics: [
-      "曖昧な要望の整理",
-      "複数部門との合意形成",
-      "導入後の定着支援",
-    ],
+    topics: ["曖昧な要望の整理", "複数部門との合意形成", "導入後の定着支援"],
     questions: [
       "顧客の要望が曖昧な状態から、業務要件を整理した経験はありますか？",
       "複数部門の意見が割れた時、どのように合意形成していましたか？",
@@ -106,11 +62,7 @@ const samples = [
     ],
     tags: ["要件整理", "合意形成", "定着支援"],
     reason: "PMO経験 × 顧客業務に踏み込む導入支援",
-    concerns: [
-      "導入後の責任範囲",
-      "プロダクト理解のキャッチアップ",
-      "顧客業務にどこまで入り込むか",
-    ],
+    concerns: ["導入後の責任範囲", "プロダクト理解のキャッチアップ", "顧客業務にどこまで入り込むか"],
   },
 ];
 
@@ -157,31 +109,22 @@ export default function Home() {
         </h1>
 
         <p className="text-2xl leading-relaxed mb-6">
-          候補者ごとの職種理解・自走力・現場再現性を確認するための
+          求人票と匿名プロフィールから、
           <br />
-          「面談前メモ」を作成します。
+          現場面談者にそのまま渡せる「候補者別メモ」を作成します。
         </p>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
-          明日めんは、
-          <br />
-          求人票と匿名化した候補者プロフィールをもとに、
-          <br />
-          現場面談者が面談前に見るべき確認観点を1枚に整理します。
-          <br />
-          <br />
           Wantedly経由のカジュアル面談で、
           <br />
-          「良さそうでした」だけで終わらせないための
+          職種理解・自走力・現場再現性を確認しやすくするための
           <br />
-          候補者別の面談準備メモです。
+          面談前メモです。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href={TALLY_FORM_URL}
-            target="_blank"
-            rel="noreferrer"
+            href="#request"
             className="inline-block bg-[#2d4aa5] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition text-center"
           >
             無料で1件作成する
@@ -208,21 +151,11 @@ export default function Home() {
 
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <ul className="space-y-4 text-xl leading-relaxed">
-            <li>
-              ・候補者の共感や雰囲気は良さそうだが、職種理解や自走力までは見えにくい
-            </li>
-            <li>
-              ・CS/導入支援/BPOに必要な泥臭い顧客対応力を、面談でどう確認するか迷う
-            </li>
-            <li>
-              ・現場面談者に「この候補者はここを見てほしい」を都度補足している
-            </li>
-            <li>
-              ・面談後のフィードバックが「良さそうでした」で終わり、次の判断に使いづらい
-            </li>
-            <li>
-              ・カジュアル面談が増え、候補者ごとの確認観点を整理する時間が足りない
-            </li>
+            <li>・候補者の共感や雰囲気は良さそうでも、職種理解や自走力までは見えにくい</li>
+            <li>・CS/導入支援/BPOに必要な泥臭い顧客対応力を、面談でどう確認するか迷う</li>
+            <li>・現場面談者に「この候補者はここを見てほしい」を都度補足している</li>
+            <li>・面談後のフィードバックが「良さそうでした」で終わり、次の判断に使いづらい</li>
+            <li>・カジュアル面談が増え、候補者ごとの確認観点を整理する時間が足りない</li>
           </ul>
         </div>
       </section>
@@ -480,9 +413,7 @@ export default function Home() {
           </p>
 
           <a
-            href={TALLY_FORM_URL}
-            target="_blank"
-            rel="noreferrer"
+            href="#request"
             className="inline-block bg-[#2d4aa5] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition text-center"
           >
             無料で1件作成する
@@ -529,13 +460,14 @@ export default function Home() {
           </p>
 
           <h2 className="text-3xl font-bold mb-6">
-            送るものは、求人URLと匿名プロフィールだけ。
+            送るものは、求人URLと匿名プロフィールのコピペだけ。
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-6">
-            候補者名・連絡先・顔写真などは不要です。
-            求人URLと、個人を特定できない形にした候補者プロフィールを送っていただければ、
-            1件分の面談メモを作成してお返しします。
+            既存の求人URLと、職務経歴書やプロフィールのテキストを、
+            個人情報を伏せた状態で送ってください。
+            <br />
+            整った資料でなくても、面談準備に必要な範囲が分かれば作成できます。
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -612,44 +544,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section id="contact" className="max-w-5xl mx-auto px-8 pt-8 pb-16 text-center">
-        <h2 className="text-3xl font-bold mb-6">
-          まずは、御社の求人で1件作成します
-        </h2>
+      {/* Embedded request form */}
+      <section id="request" className="max-w-5xl mx-auto px-8 py-12">
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+            無料作成フォーム
+          </p>
 
-        <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-          求人URLと匿名化した候補者プロフィールを送っていただければ、
-          <br />
-          現場面談者に渡せる「候補者別の面談前メモ」を1件無料で作成します。
-          <br />
-          <br />
-          内容確認後、通常2〜3営業日以内を目安に、Google Docs形式で共有します。
-          <br />
-          必要に応じて、文言調整やPDF化も可能です。
-        </p>
+          <h2 className="text-3xl font-bold mb-6">
+            まずは、御社の求人で1件作成します
+          </h2>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href={TALLY_FORM_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block bg-[#2d4aa5] text-white px-10 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition"
-          >
-            無料で1件作成する
-          </a>
+          <p className="text-xl leading-relaxed text-[#51608f] mb-8">
+            求人URLと、匿名化した候補者プロフィールを貼り付けてください。
+            <br />
+            内容確認後、通常2〜3営業日以内を目安に、Google Docs形式で共有します。
+          </p>
 
-          <a
-            href="#sample"
-            className="inline-block bg-white text-[#2d4aa5] border border-[#2d4aa5] px-10 py-4 rounded-xl text-lg font-semibold hover:bg-[#eef2ff] transition"
-          >
-            サンプルメモを見る
-          </a>
+          <div className="rounded-2xl bg-[#f5f5f7] p-4">
+            <iframe
+              src={TALLY_EMBED_URL}
+              width="100%"
+              height="820"
+              frameBorder="0"
+              marginHeight={0}
+              marginWidth={0}
+              title="明日めん 無料作成フォーム"
+            />
+          </div>
+
+          <p className="mt-4 text-sm text-[#667] text-center">
+            フォームが表示されない場合は{" "}
+            <a
+              href={TALLY_FORM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#2d4aa5] underline"
+            >
+              こちらから入力できます
+            </a>
+            。
+          </p>
+
+          <p className="mt-4 text-sm text-[#667] text-center">
+            ※候補者名・連絡先・住所・顔写真などは伏せた状態でご利用ください。
+          </p>
         </div>
-
-        <p className="mt-6 text-sm text-[#667]">
-          ※候補者名・連絡先・住所・顔写真などは伏せた状態でご利用ください。
-        </p>
       </section>
     </main>
   );
