@@ -261,7 +261,7 @@ export default function Home() {
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
               <p className="text-[#2aa7a1] font-bold mb-3">1</p>
               <p className="text-xl font-bold leading-relaxed">
-                まず見るポイントを整理
+                見るポイントを整理
               </p>
             </div>
 
