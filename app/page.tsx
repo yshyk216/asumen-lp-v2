@@ -12,18 +12,6 @@ const samples = [
       experience: "法人営業・顧客折衝の経験あり。",
       focus: "CS業務理解・導入後の伴走・未経験領域の学び方",
     },
-    jobNeeds: [
-      "導入支援",
-      "オンボーディング",
-      "顧客課題の整理",
-      "社内連携",
-    ],
-    candidateExperience: [
-      "法人営業3年",
-      "顧客折衝",
-      "提案経験",
-      "未経験商材のキャッチアップ",
-    ],
     points: [
       "導入後の顧客支援の実務感をどこまで理解しているか",
       "顧客要望を整理し、社内でどう調整していたか",
@@ -33,20 +21,17 @@ const samples = [
       {
         title: "導入後の顧客支援",
         text: "初めて扱う業務を任された時って、まず何から理解することが多かったですか？",
-        tags: ["職種理解", "業務理解", "キャッチアップ"],
-        reason: "法人営業 × SaaS導入後の顧客伴走",
+        focus: "職種理解 / 業務理解 / キャッチアップ",
       },
       {
         title: "複数顧客対応",
         text: "複数の顧客対応や社内確認が重なった時って、まず何から整理してました？",
-        tags: ["優先順位", "初動", "整理"],
-        reason: "既存顧客フォロー × 複数顧客対応",
+        focus: "優先順位 / 初動 / 整理",
       },
       {
         title: "顧客要望の整理と相談",
         text: "顧客から『もっとこう使いたい』と相談された時って、どこまで自分で整理して、どこから周りに相談してました？",
-        tags: ["顧客対応", "情報整理", "相談"],
-        reason: "顧客要望ヒアリング × 導入支援",
+        focus: "顧客対応 / 情報整理 / 相談",
       },
     ],
     feedbacks: [
@@ -69,18 +54,6 @@ const samples = [
       experience: "SV・応対品質改善の経験あり。",
       focus: "現場改善・優先順位・仕組み化",
     },
-    jobNeeds: [
-      "業務フロー設計",
-      "メンバー管理",
-      "品質改善",
-      "顧客折衝",
-    ],
-    candidateExperience: [
-      "コールセンターSV経験",
-      "メンバー育成",
-      "応対品質の改善",
-      "クレーム対応",
-    ],
     points: [
       "既存オペレーションの管理経験を改善業務にどう広げられそうか",
       "メンバー対応と顧客要望が重なる場面でどう優先順位を決めていたか",
@@ -90,20 +63,17 @@ const samples = [
       {
         title: "現場改善の進め方",
         text: "現場でミスや遅延が続いた時って、原因をどう整理して改善してました？",
-        tags: ["品質改善", "原因整理", "現場理解"],
-        reason: "コールセンターSV経験 × BPO現場の運用改善",
+        focus: "品質改善 / 原因整理 / 現場理解",
       },
       {
         title: "優先順位のつけ方",
         text: "メンバーの稼働状況と顧客要望がぶつかった時って、まず何から整理してました？",
-        tags: ["優先順位", "整理", "顧客対応"],
-        reason: "メンバー管理 × 顧客要望対応",
+        focus: "優先順位 / 整理 / 顧客対応",
       },
       {
         title: "属人化への対応",
         text: "属人的になっていた業務を、他の人でも回せるようにした経験ってありますか？",
-        tags: ["仕組み化", "共有", "改善提案"],
-        reason: "応対品質改善 × 業務フロー設計",
+        focus: "仕組み化 / 共有 / 改善提案",
       },
     ],
     feedbacks: [
@@ -126,18 +96,6 @@ const samples = [
       experience: "PMO・関係者調整の経験あり。",
       focus: "要件整理・合意形成・定着支援",
     },
-    jobNeeds: [
-      "As-Is整理",
-      "To-Be設計",
-      "導入プロジェクト推進",
-      "活用定着支援",
-    ],
-    candidateExperience: [
-      "SIerでのPMO経験",
-      "進行管理",
-      "関係者調整",
-      "課題整理",
-    ],
     points: [
       "PMO経験を顧客業務に踏み込む導入支援にどうつなげられそうか",
       "要望が曖昧な状態で、どこから整理していたか",
@@ -147,20 +105,17 @@ const samples = [
       {
         title: "曖昧な要望の整理",
         text: "顧客の要望が曖昧な状態だった時って、まず何から確認してました？",
-        tags: ["要件整理", "情報整理", "顧客対応"],
-        reason: "PMO経験 × 顧客業務の整理",
+        focus: "要件整理 / 情報整理 / 顧客対応",
       },
       {
         title: "複数部門との合意形成",
         text: "複数部門の意見が割れた時って、どのあたりが一番すり合わせしづらかったですか？",
-        tags: ["合意形成", "関係者調整", "期待値調整"],
-        reason: "関係者調整 × 導入プロジェクト推進",
+        focus: "合意形成 / 関係者調整 / 期待値調整",
       },
       {
         title: "導入後の定着支援",
         text: "導入後に現場で使われないリスクがありそうな時って、どこを先に確認してました？",
-        tags: ["定着支援", "現場理解", "確認"],
-        reason: "課題整理 × 活用定着支援",
+        focus: "定着支援 / 現場理解 / 確認",
       },
     ],
     feedbacks: [
@@ -225,11 +180,9 @@ export default function Home() {
         </p>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-10">
-          Wantedly経由のカジュアル面談で、
+          職種理解・自走力・現場再現性を確認しやすくするための、
           <br />
-          職種理解・自走力・現場再現性を確認しやすくするための
-          <br />
-          面談前メモです。
+          面談前の補助メモです。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -249,7 +202,7 @@ export default function Home() {
         </div>
 
         <p className="mt-5 text-sm text-[#667]">
-          求人URLと匿名プロフィールを送るだけ。内容確認後、通常2〜3営業日以内を目安にお返しします。
+          求人URLと匿名プロフィールを送るだけ。通常2〜3営業日以内を目安にお返しします。
         </p>
       </section>
 
@@ -265,16 +218,13 @@ export default function Home() {
               ・候補者の共感や雰囲気は良さそうでも、職種理解や自走力までは見えにくい
             </li>
             <li>
-              ・CS/導入支援/BPOに必要な実務感を、面談でどう確認するか迷う
-            </li>
-            <li>
               ・現場面談者に「この候補者はここを見てほしい」を都度補足している
             </li>
             <li>
               ・面談後のフィードバックが「良さそうでした」で終わり、次の判断に使いづらい
             </li>
             <li>
-              ・カジュアル面談が増え、候補者ごとの確認観点を整理する時間が足りない
+              ・候補者ごとの確認観点を整理する時間が足りない
             </li>
           </ul>
         </div>
@@ -294,32 +244,30 @@ export default function Home() {
           </h2>
 
           <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-            Wantedly経由のカジュアル面談では、候補者の共感や雰囲気は見えやすい一方で、
-            実際の職種理解・自走力・現場での再現性まで確認する必要があります。
+            求人票と候補者プロフィールの接点をもとに、
             <br />
-            明日めんは、求人票と候補者プロフィールの接点をもとに、
-            現場面談者が短時間で読みやすい形にまとめます。
+            現場面談者が短時間で読みやすい面談前メモを作成します。
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
               <p className="text-[#2aa7a1] font-bold mb-3">1</p>
               <p className="text-xl font-bold leading-relaxed">
-                職種理解を確認する観点を整理
+                まず見るポイントを整理
               </p>
             </div>
 
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
               <p className="text-[#2aa7a1] font-bold mb-3">2</p>
               <p className="text-xl font-bold leading-relaxed">
-                自走力・キャッチアップ力を見る質問に変換
+                そのまま聞ける3問に変換
               </p>
             </div>
 
             <div className="rounded-2xl bg-[#f5f5f7] p-6">
               <p className="text-[#2aa7a1] font-bold mb-3">3</p>
               <p className="text-xl font-bold leading-relaxed">
-                面談後に残す観点まで1枚に整理
+                面談後に残す観点も整理
               </p>
             </div>
           </div>
@@ -336,13 +284,6 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">
             候補者によって、見るべき観点が変わりやすい求人に向いています。
           </h2>
-
-          <p className="text-xl leading-relaxed text-[#51608f] mb-8">
-            明日めんは、経験の読み替えや現場での深掘り観点が変わりやすい求人で特に使いやすいです。
-            <br />
-            とくに、Wantedly経由のカジュアル面談で、
-            採用担当が現場面談者に「この候補者はここを見てほしい」と共有する場面を想定しています。
-          </p>
 
           <div className="grid md:grid-cols-2 gap-4">
             {fitJobs.map((job) => (
@@ -383,42 +324,20 @@ export default function Home() {
         </p>
       </section>
 
-      {/* What it organizes */}
-      <section className="max-w-5xl mx-auto px-8 py-12">
-        <h2 className="text-3xl font-bold mb-6">
-          面談前に、ここまで整理します
-        </h2>
-
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <ul className="space-y-4 text-xl leading-relaxed">
-            <li>・求人と候補者経験が重なる実務場面</li>
-            <li>・職種理解を確認したいポイント</li>
-            <li>・自走力・キャッチアップ力を確認する質問</li>
-            <li>・現場での再現性を見たい経験</li>
-            <li>・質問の根拠となる求人と経歴の接点</li>
-            <li>・面談後フィードバックで見てほしいこと</li>
-            <li>・候補者が気にしそうなこと</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Candidate-specific sample cards */}
+      {/* Sample */}
       <section id="sample" className="max-w-5xl mx-auto px-8 py-12">
         <p className="text-sm font-bold text-[#2aa7a1] mb-3">
           出力サンプル
         </p>
 
         <h2 className="text-3xl font-bold mb-6">
-          現場面談者が迷わないように、
-          <br />
-          候補者ごとの見るポイントを整理します
+          実際にお返しする面談前メモのイメージです
         </h2>
 
         <p className="text-lg leading-relaxed text-[#51608f] mb-8">
           以下は、架空の求人・候補者情報をもとにしたサンプルです。
           <br />
-          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに、
-          現場面談者にそのまま渡せる縦型の面談前メモとして作成します。
+          実際の無料作成では、御社の求人と匿名化した候補者プロフィールをもとに作成します。
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6">
@@ -437,7 +356,7 @@ export default function Home() {
                 {sample.title}
               </h3>
 
-              <p className="font-bold leading-relaxed mb-6">
+              <p className="font-bold leading-relaxed mb-5">
                 候補者：{sample.candidate}
               </p>
 
@@ -446,26 +365,6 @@ export default function Home() {
                 <p className="leading-relaxed text-[#51608f]">
                   「{sample.summary.focus}」あたりを確認できるとよさそう。
                 </p>
-              </div>
-
-              <div className="grid gap-4 mb-5">
-                <div className="rounded-2xl bg-[#f5f5f7] p-5">
-                  <p className="font-bold mb-3">求人側</p>
-                  <ul className="space-y-2 leading-relaxed text-[#51608f]">
-                    {sample.jobNeeds.map((item) => (
-                      <li key={item}>・{item}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="rounded-2xl bg-[#f5f5f7] p-5">
-                  <p className="font-bold mb-3">候補者側</p>
-                  <ul className="space-y-2 leading-relaxed text-[#51608f]">
-                    {sample.candidateExperience.map((item) => (
-                      <li key={item}>・{item}</li>
-                    ))}
-                  </ul>
-                </div>
               </div>
 
               <div className="border-t border-[#e5e7eb] pt-5 mb-5">
@@ -487,23 +386,12 @@ export default function Home() {
                         {index + 1}. {question.title}
                       </p>
 
-                      <p className="text-lg font-semibold leading-relaxed mb-3">
+                      <p className="text-lg font-semibold leading-relaxed mb-2">
                         「{question.text}」
                       </p>
 
-                      <div className="flex flex-wrap gap-2 mb-2">
-                        {question.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="rounded-full bg-[#eef2ff] px-3 py-1 text-sm font-semibold text-[#2d4aa5]"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-
                       <p className="text-sm text-[#667]">
-                        根拠：{question.reason}
+                        見る観点：{question.focus}
                       </p>
                     </div>
                   ))}
@@ -590,50 +478,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Easy trial */}
-      <section className="max-w-5xl mx-auto px-8 py-12">
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
-            無料作成で必要なもの
-          </p>
-
-          <h2 className="text-3xl font-bold mb-6">
-            送るものは、求人URLと匿名プロフィールのコピペだけ。
-          </h2>
-
-          <p className="text-xl leading-relaxed text-[#51608f] mb-6">
-            既存の求人URLと、職務経歴書やプロフィールのテキストを、
-            <br />
-            個人情報を伏せた状態で送ってください。
-            <br />
-            整った資料でなくても、面談準備に必要な範囲が分かれば作成できます。
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="rounded-2xl bg-[#f5f5f7] p-6">
-              <p className="font-bold mb-3">1. 求人URL</p>
-              <p className="leading-relaxed text-[#51608f]">
-                Wantedly・採用ページ・募集要項など
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-[#f5f5f7] p-6">
-              <p className="font-bold mb-3">2. 匿名プロフィール</p>
-              <p className="leading-relaxed text-[#51608f]">
-                職務経験・スキル・自己PRなど
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-[#f5f5f7] p-6">
-              <p className="font-bold mb-3">3. Google Docsで共有</p>
-              <p className="leading-relaxed text-[#51608f]">
-                必要に応じて文言調整・PDF化も可能
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* What it does / does not do */}
       <section className="max-w-5xl mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 gap-6">
@@ -643,7 +487,6 @@ export default function Home() {
             <ul className="space-y-4 text-lg leading-relaxed">
               <li>・求人票と候補者経験の接点を整理する</li>
               <li>・面談で確認したい実務場面を見つける</li>
-              <li>・職種理解・自走力・現場再現性を見る観点を整理する</li>
               <li>・現場面談者に渡せる候補者別メモを作る</li>
               <li>・面談後に残すとよさそうな観点も整理する</li>
               <li>・候補者が気にしそうなことも整理する</li>
