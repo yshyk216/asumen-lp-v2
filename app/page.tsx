@@ -535,6 +535,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why */}
+      <section className="max-w-5xl mx-auto px-8 py-12">
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <p className="text-sm font-bold text-[#2aa7a1] mb-3">
+            なぜ作っているのか
+          </p>
+
+          <h2 className="text-3xl font-bold mb-6">
+            現場に入る前の「見るべきポイント」を、
+            <br />
+            短く整理して渡したい。
+          </h2>
+
+          <p className="text-xl leading-relaxed text-[#51608f] mb-5">
+            私は普段、オンライン配信の現場で、事前ヒアリング・要件整理・当日の進行サポートを行っています。
+          </p>
+
+          <p className="text-xl leading-relaxed text-[#51608f] mb-5">
+            その中で、現場の方が本番前に「何を確認すればよいか」「どこを見ておけばよいか」を短く整理して渡すことの重要性を感じてきました。
+          </p>
+
+          <p className="text-xl leading-relaxed text-[#51608f]">
+            採用面談でも、現場面談者が本業の合間に面談へ入る場面があります。
+            求人内容と匿名プロフィールをもとに、面談前に見るべきポイントを整理できれば、
+            採用担当と現場面談者の事前共有を少し軽くできるのではないかと思い、明日めんを検証しています。
+          </p>
+        </div>
+      </section>
+
       {/* Privacy */}
       <section className="max-w-5xl mx-auto px-8 pt-12 pb-6">
         <div className="bg-white rounded-2xl p-8 shadow-sm">
