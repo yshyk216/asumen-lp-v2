@@ -587,6 +587,7 @@ export default function Home() {
 
           <p className="text-xl leading-relaxed text-[#51608f]">
             匿名プロフィールには、職務経験・スキル・自己PRなど、
+            <br />
             面談準備に必要な範囲だけを記載してください。
           </p>
         </div>
